@@ -1,7 +1,9 @@
 #!/bin/bash python
 
+
 def find_q(N):
-    # Values 1 and 0 can't be processed by next loop, and we need to process those critical situation before it
+    # Values 1 and 0 can't be processed by next loop, and we need to process
+    # those critical situation before it
     if N == 1:
         return 1
     elif N == 0:
@@ -12,7 +14,7 @@ def find_q(N):
         while N % i == 0:
             N /= i
             multiply_list.append(i)
-    
+
     if N != 1:
         # It means we can't get expected value multiplying numbers from 1 to
         return -1
